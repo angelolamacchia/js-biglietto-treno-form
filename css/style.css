@@ -84,6 +84,8 @@ main {
 /* impostazioni ticket */
 .ticket {
     background-color: white;
+    padding: 20px;
+    border-radius: 15px;
 }
 .ticket table {
     width: 100%;
@@ -93,5 +95,5 @@ main {
     padding: 20px 0;
 }
 .offerta {
-    width: 160px;
+    width: 180px;
 }

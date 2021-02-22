@@ -48,11 +48,11 @@ genera.addEventListener("click",
         // iniezione tipo di prezzo
         document.getElementById("out_sconto").innerHTML = eta;
 
-        // iniezione n carrozza
+        // iniezione n carrozza da 1 a 10
         document.getElementById("out_carrozza").innerHTML = 
         Math.floor(Math.random()*10 +1);
 
-        // iniezione codice
+        // iniezione codice da 90000 a 100000 escluso
         document.getElementById("out_codice").innerHTML = 
         Math.floor(Math.random()*10000 +90000);
         
