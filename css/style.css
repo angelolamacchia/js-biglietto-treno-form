@@ -1,0 +1,87 @@
+/* impostazioni generali */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #b91450;
+} 
+
+main {
+    width: 60%;
+    margin: 0 auto;
+}
+
+.text_center {
+    text-align: center;
+}
+.text_bold {
+    font-weight: bold;
+}
+.text_white {
+    color: white;
+}
+
+.padding_20 {
+    padding: 20px;
+}
+
+.bg_grey {
+    background-color: grey;
+    border: 1px solid grey;
+}
+
+/* impostazioni calculator */
+.calculator {
+    background-color: white;
+    border-radius: 15px;
+    padding: 20px;
+    color: #b91450;
+}
+.calculator .row {
+    display: flex;
+    justify-content: space-around;
+}
+.calculator .row p {
+    width: 160px;
+}
+.calculator .input_row {
+    display: flex;
+    justify-content: space-around;
+}
+.calculator .input_row input,
+.calculator .input_row select {
+    width: 160px;
+    border: 1px solid #b91450;
+}
+.calculator .button_row {
+    padding-top: 30px;
+}
+.calculator .button_row button,
+.calculator .button_row input {
+    margin: 0 10px;
+    width: 100px;
+    height: 30px;
+    border-radius: 5px;
+    border: 1px solid grey;
+    color: #b91450;
+    font-weight: bold;
+}
+.calculator .button_row button:focus {
+    border: 1px solid red;
+}
+
+
+/* impostazioni ticket */
+.ticket {
+    background-color: white;
+}
+.ticket table {
+    width: 100%;
+    text-align: left;
+}
+.ticket table th {
+    padding: 20px 0;
+}

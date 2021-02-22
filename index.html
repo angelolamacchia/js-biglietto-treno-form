@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <main>
+        <div class="calculator_header text_center padding_20 text_white">
+            <h2>CALCOLA IL PREZZO DEL TUO BIGLIETTO</h2>
+        </div>
+        <div class="calculator text_center">
+            <div class="row">
+                <p>Nome e cognome</p>
+                <p>Km da percorrere</p>
+                <p>Fascia d'età</p>
+            </div>
+            <div class="input_row">
+                <input type="name" id="in_nome">
+                <input type="number" id="in_kilometri">
+                <select name="eta" id="in_eta">
+                    <option value="Prezzo normale">Maggiorenne</option>
+                    <option value="Prezzo silver">Minorenne</option>
+                    <option value="Prezzo gold">Over 65</option>
+                </select>
+            </div>
+            <div class="button_row">
+                <button id="genera">Genera</button>
+                <button id="annulla">Annulla</button>
+            </div>
+        </div>
+        
+        <div class="ticket_header text_center padding_20 text_white">
+            <h2>IL TUO BIGLIETTO</h2>
+        </div>
+        <div class="ticket">
+            <h4>DETTAGLIO PASSEGGERI</h4>
+            <table>
+                <tr>
+                    <th class="bg_grey"><h2>NOME PASSEGGERO</h2></th>
+                    <th><h3>Offerta</h3></th>
+                    <th><h3>Carrozza</h3></th>
+                    <th><h3>Codice CP</h3></th>
+                    <th><h3>Costo biglietto</h3></th>
+                </tr>
+                <tr>
+                    <td class="bg_grey"><h3 id="out_nome"></h3></td>
+                    <td><p id="out_sconto"></p></td>
+                    <td> <p id="out_carrozza"></p></td>
+                    <td><p id="out_codice"></p></td>
+                    <td> <p id="out_prezzo"></p></td>
+                </tr>
+            </table>
+
+        </div>
+    </main>
+    
+
+    <script src="js/script.js"></script>
+</body>
+</html>
