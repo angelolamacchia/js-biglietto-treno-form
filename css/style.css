@@ -33,6 +33,13 @@ main {
     border: 1px solid grey;
 }
 
+.display_block {
+    display: block;
+}
+.display_none {
+    display: none;
+}
+
 /* impostazioni calculator */
 .calculator {
     background-color: white;

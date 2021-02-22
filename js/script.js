@@ -1,4 +1,6 @@
+var genera = document.getElementById("genera");
 
+var annulla = document.getElementById("annulla");
 
 genera.addEventListener("click",
     function(){
@@ -7,9 +9,12 @@ genera.addEventListener("click",
         var kilometri = document.getElementById("in_kilometri").value;
         const prezzoKm = (kilometri * 0.21);
 
-        var prezzo = prezzoKm;
-        var prezzoMin = prezzoKm * 0.8;
-        var prezzoOv = prezzoKm * 0.6;
+        var prezzo = Math.round(prezzoKm*10)/10 + "€"
+        var prezzoMin = Math.round((prezzoKm * 0.8)*10)/10 + "€";
+        var prezzoOv = Math.round((prezzoKm * 0.6)*10)/10 + "€";
+
+        var display = document.getElementById("display");
+        display.className = display.classList + "display_block"
 
         var eta = document.getElementById("in_eta").value;
         if (eta == "Prezzo silver") {
@@ -35,3 +40,8 @@ genera.addEventListener("click",
     }
 );
 
+annulla.addEventListener("click",
+    function() {
+        location.reload();
+    }
+);
