@@ -19,19 +19,19 @@ genera.addEventListener("click",
         const prezzoKm = (kilometri * 0.21);
 
         // prezzario
-        var prezzo = Math.round(prezzoKm*10)/10 + "€"
+        var prezzo = Math.round(prezzoKm*10)/10 + "€";
         var prezzoMin = Math.round((prezzoKm * 0.8)*10)/10 + "€";
         var prezzoOv = Math.round((prezzoKm * 0.6)*10)/10 + "€";
 
         // variabile display block
         var display = document.getElementById("display");
-        display.className = display.classList + "display_block"
+        display.className = display.classList + "display_block";
 
         // variabile tipo di prezzo
         var eta = document.getElementById("in_eta").value;
-        if (eta == "Prezzo silver") {
+        if (eta == "Prezzo minore (-20%)") {
             document.getElementById("out_prezzo").innerHTML = prezzoMin;
-        } else if (eta == "Prezzo gold") {
+        } else if (eta == "Prezzo over (-40%)") {
             document.getElementById("out_prezzo").innerHTML = prezzoOv;
         } else if (eta == "Prezzo normale") {
             document.getElementById("out_prezzo").innerHTML = prezzo;
