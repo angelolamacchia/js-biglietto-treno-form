@@ -23,18 +23,17 @@ genera.addEventListener("click",
         var prezzoMin = Math.round((prezzoKm * 0.8)*10)/10 + "€";
         var prezzoOv = Math.round((prezzoKm * 0.6)*10)/10 + "€";
 
-        // variabile display block
-        var display = document.getElementById("display");
-        display.className = display.classList + "display_block";
-
         // variabile tipo di prezzo
         var eta = document.getElementById("in_eta").value;
-        if (eta == "Prezzo minore (-20%)") {
+        if (eta == "minorenne") {
             document.getElementById("out_prezzo").innerHTML = prezzoMin;
-        } else if (eta == "Prezzo over (-40%)") {
+            eta = "Prezzo minore (-20%)";
+        } else if (eta == "over") {
             document.getElementById("out_prezzo").innerHTML = prezzoOv;
-        } else if (eta == "Prezzo normale") {
+            eta = "Prezzo over (-40%)";
+        } else if (eta == "maggiorenne") {
             document.getElementById("out_prezzo").innerHTML = prezzo;
+            eta = "Prezzo normale";
         }
 
         // controllo nome
@@ -55,7 +54,10 @@ genera.addEventListener("click",
         // iniezione codice da 90000 a 100000 escluso
         document.getElementById("out_codice").innerHTML = 
         Math.floor(Math.random()*10000 +90000);
-        
+
+         // variabile display block
+         var display = document.getElementById("display");
+         display.className = display.classList + " display_block";
     }
 );
 

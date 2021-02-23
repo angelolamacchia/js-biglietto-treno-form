@@ -33,11 +33,12 @@ main {
     border: 1px solid grey;
 }
 
-.display_block {
-    display: block;
+input:focus {
+    background-color: #b91450;
+    color: white;
 }
-.display_none {
-    display: none;
+input:focus::placeholder {
+    color: white;
 }
 
 /* impostazioni calculator */
@@ -86,6 +87,13 @@ main {
     background-color: white;
     padding: 20px;
     border-radius: 15px;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s, opacity 0.5s linear;
+}
+.display_block {
+    visibility: visible;
+    opacity: 1;
 }
 .ticket table {
     width: 100%;

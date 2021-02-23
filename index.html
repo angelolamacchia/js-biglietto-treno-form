@@ -20,12 +20,12 @@
                 <p>Fascia d'età</p>
             </div>
             <div class="input_row">
-                <input type="name" id="in_nome">
-                <input type="number" id="in_kilometri" min="1" max="1300">
+                <input placeholder="Inserisci il tuo Nome" type="name" id="in_nome">
+                <input placeholder="Inserisci i Km" type="number" id="in_kilometri" min="1" max="1300">
                 <select name="eta" id="in_eta">
-                    <option value="Prezzo normale">Maggiorenne</option>
-                    <option value="Prezzo minore (-20%)">Minorenne</option>
-                    <option value="Prezzo over (-40%)">Over 65</option>
+                    <option value="maggiorenne">Maggiorenne</option>
+                    <option value="minorenne">Minorenne</option>
+                    <option value="over">Over 65</option>
                 </select>
             </div>
             <div class="button_row">
@@ -37,7 +37,7 @@
         <div class="ticket_header text_center padding_20 text_white">
             <h2>IL TUO BIGLIETTO</h2>
         </div>
-        <div id="display" class="ticket display_none">
+        <div id="display" class="ticket">
             <h4>DETTAGLIO PASSEGGERI</h4>
             <table>
                 <tr>
